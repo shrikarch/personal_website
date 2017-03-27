@@ -1,0 +1,124 @@
+@raleway: 'Raleway',sans-serif;
+@roboto: 'Roboto',sans-serif;
+@primary_color: #231f20;
+@grey: #808285;
+@beige: #f5f5dc;
+//sky blue: #5DA4D9;
+
+@import "underline-from-left"; 
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: @raleway;
+    color: lighten(@primary_color,20%);
+}
+
+.mainHeader {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    padding: 25px 50px;
+}
+.card_gutter{
+    margin-bottom: 30px;
+}
+.card {
+    border-radius: 0px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border: 0px;
+    .card-title {
+        font-family: @raleway;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .card-text {
+        font-family: @roboto;
+    }
+}
+
+.right_section{
+    .card-title{
+        margin-bottom: 20px;
+    }
+    .card-text{
+        .info_block{
+            margin-bottom: 20px;
+            .subhead{
+                border-bottom:1px solid #ddd;
+                padding-bottom:10px;
+                font-weight: 800;
+                .info_duration_date{
+                    font-size: 12px;
+                }
+            }
+            p:not(:first-of-type){
+                margin-bottom: 5px;
+            }
+            a{
+                text-decoration: none;
+            }
+            .code_sources{
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+.left_section{    
+    .main-card {
+        hr{
+            border-top: 1px solid lighten(@primary_color,30%);
+        }
+        .card-block {
+            background-color: @primary_color;
+            color: beige;
+            .card-title{
+                font-size: 30px;
+                font-weight: 800;
+                line-height: 25px;
+                .lastname{
+                    color:@grey;
+                }
+            }
+            .card-text{
+                .about_section{
+                    p{
+                        margin-bottom: 8px;
+                    }
+                }
+                .links{
+                    line-height: 40px;
+                }
+                a{
+                    color: beige;
+                    text-decoration: none;
+                }
+                .skill{
+                    padding-bottom: 30px;
+                    .progress{
+                        background-color: rgba(255,255,255,.15);
+                        .progress-bar{
+                            background-color: beige;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tags {
+    list-style: none;
+    overflow: hidden; 
+    padding: 0;
+    margin: 10px 0px;
+}

@@ -1,0 +1,18 @@
+{
+    "name": "shrikarc-web",
+    "version": "1.0.0",
+    "description": "My own website. Nothing else",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Shrikar C",
+    "license": "ISC",
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-contrib-concat": "*",
+        "grunt-contrib-cssmin": "*",
+        "grunt-contrib-less": "*",
+        "grunt-contrib-watch": "*"
+    }
+}
