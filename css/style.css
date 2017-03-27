@@ -74,6 +74,9 @@ body {
 .right_section .card-title {
   margin-bottom: 20px;
 }
+.right_section .card-text a {
+  text-decoration: none;
+}
 .right_section .card-text .info_block {
   margin-bottom: 20px;
 }
@@ -88,11 +91,8 @@ body {
 .right_section .card-text .info_block p:not(:first-of-type) {
   margin-bottom: 5px;
 }
-.right_section .card-text .info_block a {
-  text-decoration: none;
-}
 .right_section .card-text .info_block .code_sources {
-  margin-left: 30px;
+  color: #896A67;
 }
 .left_section .main-card hr {
   border-top: 1px solid #74676a;
