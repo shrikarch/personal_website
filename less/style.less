@@ -3,6 +3,7 @@
 @primary_color: #231f20;
 @grey: #808285;
 @beige: #f5f5dc;
+@right_section_links: #c39325;
 //sky blue: #5DA4D9;
 
 @import "underline-from-left"; 
@@ -67,7 +68,14 @@ body {
                 margin-bottom: 5px;
             }
             .code_sources{
-                color: #896A67;
+                color: @right_section_links;
+                -webkit-transition: color 0.5s;
+                -moz-transition: color 0.5s;
+                -o-transition: color 0.5s;
+                transition: color 0.5s;
+            }
+            .code_sources:hover{
+                color: darken(@right_section_links,50%);
             }
         }
     }

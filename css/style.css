@@ -92,7 +92,14 @@ body {
   margin-bottom: 5px;
 }
 .right_section .card-text .info_block .code_sources {
-  color: #896A67;
+  color: #c39325;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.right_section .card-text .info_block .code_sources:hover {
+  color: #000000;
 }
 .left_section .main-card hr {
   border-top: 1px solid #74676a;
