@@ -52,9 +52,6 @@ body {
 .hidden {
   display: none;
 }
-.container {
-  padding: 25px 50px;
-}
 .card_gutter {
   margin-bottom: 30px;
 }
@@ -70,55 +67,6 @@ body {
 }
 .card .card-text {
   font-family: 'Roboto', sans-serif;
-}
-.right_section .buttons {
-  margin-bottom: 15px;
-}
-.right_section .buttons .top_link {
-  padding: 15px;
-  color: #666666;
-}
-.right_section .buttons a,
-.right_section .buttons a:hover,
-.right_section .buttons a:active,
-.right_section .buttons a:visited,
-.right_section .buttons a:focus {
-  text-decoration: none;
-}
-.right_section .buttons .active_top_link {
-  color: #333;
-  font-weight: 600;
-  border-bottom: 1px solid #333;
-}
-.right_section .card-title {
-  margin-bottom: 20px;
-}
-.right_section .card-text a {
-  text-decoration: none;
-}
-.right_section .card-text .info_block {
-  margin-bottom: 20px;
-}
-.right_section .card-text .info_block .subhead {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-  font-weight: 800;
-}
-.right_section .card-text .info_block .subhead .info_duration_date {
-  font-size: 12px;
-}
-.right_section .card-text .info_block p:not(:first-of-type) {
-  margin-bottom: 5px;
-}
-.right_section .card-text .info_block .code_sources {
-  color: #c39325;
-  -webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  transition: color 0.5s;
-}
-.right_section .card-text .info_block .code_sources:hover {
-  color: #000000;
 }
 .left_section .main-card hr {
   border-top: 1px solid #74676a;
@@ -154,6 +102,59 @@ body {
 .left_section .main-card .card-block .card-text .skill .progress .progress-bar {
   background-color: beige;
 }
+.right_section .buttons {
+  margin-bottom: 15px;
+}
+.right_section .buttons .top_link {
+  padding: 15px;
+  color: #666666;
+}
+.right_section .buttons a,
+.right_section .buttons a:hover,
+.right_section .buttons a:active,
+.right_section .buttons a:visited,
+.right_section .buttons a:focus {
+  text-decoration: none;
+}
+.right_section .buttons .active_top_link {
+  color: #333;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+}
+.right_section .card-title {
+  margin-bottom: 20px;
+  margin-left: -8px;
+}
+.right_section .card-text a {
+  text-decoration: none;
+}
+.right_section .card-text .info_block {
+  margin-bottom: 20px;
+}
+.right_section .card-text .info_block .subhead {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  font-weight: 800;
+}
+.right_section .card-text .info_block .subhead .info_duration_date {
+  font-size: 12px;
+}
+.right_section .card-text .info_block p:not(:first-of-type) {
+  margin-bottom: 5px;
+}
+.right_section .card-text .info_block .code_sources {
+  color: #c39325;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.right_section .card-text .info_block .code_sources:hover {
+  color: #000000;
+}
+.right_section .show_more_block .btn {
+  cursor: pointer;
+}
 .tags {
   list-style: none;
   overflow: hidden;
@@ -172,4 +173,31 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .right_section .card-title {
+    margin-left: 0px;
+  }
+  .right_section .card-text {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    width: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    padding: 25px 50px;
+  }
 }

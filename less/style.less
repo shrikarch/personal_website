@@ -8,7 +8,6 @@
 
 @import "underline-from-left"; 
 
-
 html,
 body {
     height: 100%;
@@ -27,11 +26,13 @@ body {
 }
 
 .container {
-    padding: 25px 50px;
+    //padding: 0px;
 }
+
 .card_gutter{
     margin-bottom: 30px;
 }
+
 .card {
     border-radius: 0px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -46,57 +47,7 @@ body {
     }
 }
 
-.right_section{
-    .buttons{
-        margin-bottom: 15px;
-        .top_link{
-            padding: 15px;
-            color: lighten(#333,20%);
-        }
-        a, a:hover, a:active, a:visited, a:focus {
-            text-decoration:none;
-        }
-        .active_top_link{
-            color: #333;
-            font-weight: 600;
-            border-bottom: 1px solid #333;
-        }
-    }
-    .card-title{
-        margin-bottom: 20px;
-    }
-    .card-text{
-        a{
-            text-decoration: none;
-        }
-        .info_block{
-            margin-bottom: 20px;
-            .subhead{
-                border-bottom:1px solid #ddd;
-                padding-bottom:10px;
-                font-weight: 800;
-                .info_duration_date{
-                    font-size: 12px;
-                }
-            }
-            p:not(:first-of-type){
-                margin-bottom: 5px;
-            }
-            .code_sources{
-                color: @right_section_links;
-                -webkit-transition: color 0.5s;
-                -moz-transition: color 0.5s;
-                -o-transition: color 0.5s;
-                transition: color 0.5s;
-            }
-            .code_sources:hover{
-                color: darken(@right_section_links,50%);
-            }
-        }
-    }
-}
-
-.left_section{    
+.left_section{
     .main-card {
         hr{
             border-top: 1px solid lighten(@primary_color,30%);
@@ -139,6 +90,64 @@ body {
     }
 }
 
+.right_section{
+    .buttons{
+        margin-bottom: 15px;
+        .top_link{
+            padding: 15px;
+            color: lighten(#333,20%);
+        }
+        a, a:hover, a:active, a:visited, a:focus {
+            text-decoration:none;
+        }
+        .active_top_link{
+            color: #333;
+            font-weight: 600;
+            border-bottom: 1px solid #333;
+        }
+    }
+    .card-title{
+        margin-bottom: 20px;
+        margin-left: -8px;
+    }
+    .card-text{
+        a{
+            text-decoration: none;
+        }
+        .info_block{
+            margin-bottom: 20px;
+            .subhead{
+                border-bottom:1px solid #ddd;
+                padding-bottom:10px;
+                font-weight: 800;
+                .info_duration_date{
+                    font-size: 12px;
+                }
+            }
+            p:not(:first-of-type){
+                margin-bottom: 5px;
+            }
+            .code_sources{
+                color: @right_section_links;
+                -webkit-transition: color 0.5s;
+                -moz-transition: color 0.5s;
+                -o-transition: color 0.5s;
+                transition: color 0.5s;
+            }
+            .code_sources:hover{
+                color: darken(@right_section_links,50%);
+            }
+        }
+    }
+    .show_more_block{
+        .btn{
+            cursor: pointer;
+        }
+    }
+}
+
+
+
 .tags {
     list-style: none;
     overflow: hidden; 
@@ -159,3 +168,51 @@ body {
         letter-spacing: 2px;
     }
 }
+
+// Small devices (landscape phones, 576px and down)
+@media (max-width: 576px) {  }
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+
+// Medium devices (tablets, 768px and down)
+@media (max-width: 768px) { 
+    .container {
+        padding:0;
+        margin:0;
+    }
+
+    body {
+        padding:0;
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .right_section{
+        .card-title{
+            margin-left: 0px;
+        }
+        .card-text{
+            padding-left: 40px;
+        }
+    }
+}
+
+
+// Large devices (desktops, 992px and down)
+@media (max-width: 992px) { }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+
+// Extra large devices (large desktops, 1200px and Down)
+@media (max-width: 1200px) { .container { width: auto; } }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .container {
+        padding: 25px 50px;
+        //padding-top: 25px;
+    } 
+}
+
+
