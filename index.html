@@ -19,6 +19,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 
         <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/imagehover.min.css">
         <link href="css/scrolling-nav.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/style.min.css" rel="stylesheet">
@@ -35,6 +36,26 @@
             .tag1:hover{
                 /*                background-color: cadetblue;*/
                 /*                border-radius: 30px;*/
+            }
+            .active_top_link_was{
+                border-radius: 0px;
+                z-index: 4;
+                position: relative;
+            }
+
+            .top {
+                box-shadow: 0 -5px 5px -5px #333;
+            }
+
+            .right {
+                box-shadow: -5px 0 5px -5px #333;
+            }
+            .left {
+                box-shadow: 5px 0 5px -5px #333;
+            }
+            .card-was{
+                z-index: 2;
+                position: relative;
             }
 
         </style>
@@ -159,243 +180,271 @@
 
                 <div class="col-md-9 right_section">
 
-                    <div class="card card_gutter">
-                        <div class="card-block">
-                            <h4 class="card-title"><span class="fa fw fa-briefcase" style="padding-right:10px;"></span> Experience</h4>
-                            <div class="card-text" style="padding-left:40px;">
-
-                                <div class="info_block">
-                                    <p class="h5 subhead">
-                                        IT Help Desk Representative <small class="text-muted">Southern Methodist University</small><br>
-                                        <span class="info_duration_date">Sept 2015 - Currently Employed</span>
-                                    </p>
-                                    <p>
-                                        • Provide front line help desk support to entire campus community - faculty, staff, students, retirees, parents and prospective students <br>
-                                        • Assist with network configurations, software troubleshooting, email support and configuration for all kinds of devices <br>
-                                        • Provide exceptional service and resolve issues in a timely manner <br>
-                                        • Use remote tools and shared knowledge base to help provide resolutions to reported issues <br>
-                                        • Document all requests for assistance in the Help Desk Software using tickets <br>
-                                    </p>
-
-                                </div>
-
-                                <div class="info_block">
-                                    <p class="h5 subhead">
-                                        Full Stack Developer <small class="text-muted">Enliven Art Studio</small><br>
-                                        <span class="info_duration_date">Aug 2014 - Apr 2015</span>
-                                    </p>
-                                    <p>
-                                        • Designed and developed a number of websites on a contract basis. <br>
-                                        • Keeping the current device requirements in the mind, these websites were built to be responsive with extensive use of frameworks like Bootstrap and Foundation. <br>
-                                        • Relied heavily on Less(css) for styling due to its compatibility with Bootstrap. <br>
-                                        • The development was up to the mark with current web development standards. <br>
-                                        • Played an important role in client communication, including understanding the requirements and design decisions. <br>
-                                    </p>
-                                </div>
-
-                                <div class="info_block">
-                                    <p class="h5 subhead">
-                                        Front End and JavaScript Developer <small class="text-muted">Palmate Solutions</small><br>
-                                        <span class="info_duration_date">Apr 2014 - Aug 2014</span>
-                                    </p>
-                                    <p>
-                                        • Worked on developing a PHP-based eCommerce portal. <br>
-                                        • Extensively used technologies like Laravel and Grunt to set-up a streamlined flow of development and automation. <br>
-                                        • Used Sass(css) for styling. <br>
-                                        • Used Git for version control and collaboration. <br>
-                                        • Used jQuery and its plugins on large scale for the interactive User Interface. <br>
-                                        • Created a responsive WordPress theme and website. <br>
-                                    </p>
-                                </div>
-
+                    <div class="row hidden">
+                        <div class="col-md-12">
+                            <div class="buttons pull-right">
+                                <a href="#" class="top_link" id="showProjects">Projects</a>
+                                <a href="#" class="top_link active_top_link" id="showResume">Resume</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card card_gutter" id="card_project">
-                        <div class="card-block">
-                            <h4 class="card-title"><span class="fa fw fa-tasks" style="padding-right:10px;"></span> Projects</h4>
-                            <div class="card-text" style="padding-left:40px;">
-                                <div class="info_block">
-                                    <p class="h5 subhead">
-                                        Support ticket system using Elixir 
-                                        <br>
-                                        <span class="info_duration_date">Spring 2016 | Team Size: Solo<br>
-                                            <a class="code_sources " href="https://github.com/shrikarch/elixir_loadBalancer" target="_blank">Source on <span class="fa fw fa-github" id="skills_trigger"></span> Github</a>
-                                        </span>
-                                    </p>
-                                    <div class="tags">
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>Elixir</a>
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>Phoenix</a>
-                                    </div>
-                                    <p>
-                                        Created a ticketing system based on Elixir (programming language) and Phoenix (framework) that supported multi-user interface. The multiple users were handled by taking advantage of processes in Elixir. (Process for each user). <br>
-                                        Keeping the distributed deployment in mind the application was made fail proof using supervisors and would route the ticket to the least busy representative.
-                                    </p>
-                                    <a class="small code_sources" href="https://github.com/shrikarch?utf8=%E2%9C%93&tab=repositories&q=&type=&language=elixir" target="_blank">View my other Elixir projects and assignments on Github</a>
-                                </div>
+                    <div class="row">
+                        <div class="col-md-12">
 
-                                <div class="info_block">
-                                    <p class="h5 subhead">
-                                        Wireless Sensor Network using Python to find the network backbone.
-                                        <br>
-                                        <span class="info_duration_date">Spring 2016 | Team Size: Solo<br>
-                                            <a class="code_sources hidden" href="https://devpost.com/software/smart-mirror-9v0pc7#updates" target="_blank">Published on <span class="fa fw fa-code"></span> Devpost</a>
-                                        </span>
+                            <div class="card card_gutter all_resume" id="card_project">
+                                <div class="card-block">
+                                    <h4 class="card-title"><span class="fa fw fa-tasks" style="padding-right:10px;"></span> Projects</h4>
+                                    <div class="card-text" style="padding-left:40px;">
+                                        <div class="info_block">
+                                            <p class="h5 subhead">
+                                                Support ticket system using Elixir 
+                                                <br>
+                                                <span class="info_duration_date">Spring 2016 | Team Size: Solo<br>
+                                                    <a class="code_sources " href="https://github.com/shrikarch/elixir_loadBalancer" target="_blank">Source on <span class="fa fw fa-github" id="skills_trigger"></span> Github</a>
+                                                </span>
+                                            </p>
+                                            <div class="tags">
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>Elixir</a>
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>Phoenix</a>
+                                            </div>
+                                            <p>
+                                                Created a ticketing system based on Elixir (programming language) and Phoenix (framework) that supported multi-user interface. The multiple users were handled by taking advantage of processes in Elixir. (Process for each user). <br>
+                                                Keeping the distributed deployment in mind the application was made fail proof using supervisors and would route the ticket to the least busy representative.
+                                            </p>
+                                            <a class="small code_sources" href="https://github.com/shrikarch?utf8=%E2%9C%93&tab=repositories&q=&type=&language=elixir" target="_blank">View my other Elixir projects and assignments on Github</a>
+                                        </div>
 
-                                    </p>
-                                    <div class="tags">
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>Python</a>
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>NetworkX</a>
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>RandomGeometricGraphs</a>
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>SensorNetworks</a>
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>Algorithms</a>
-                                    </div>
-                                    <p>
-                                        A small scale project made within 24 hours at HackDFW that earned us an opportunity to enter an accelerator program for start-ups. <br>
-                                        The whole mirror was made from merely a few things: Used cereal boxes, a wood frame, an acrylic sheet with reflective coating, an LED monitor and a Raspberry Pie! <br>
-                                        The interface was designed in HTML5 and was based on meteor.js with multiple APIs used to serve the data like live stocks, emails, tweets and weather and was controlled by voice. <br>
-                                        JavaScript library 'annyang!' was used for voice recognition.
-                                    </p>
+                                        <div class="info_block">
+                                            <p class="h5 subhead">
+                                                Wireless Sensor Network using Python to find the network backbone.
+                                                <br>
+                                                <span class="info_duration_date">Spring 2016 | Team Size: Solo<br>
+                                                    <a class="code_sources hidden" href="https://devpost.com/software/smart-mirror-9v0pc7#updates" target="_blank">Published on <span class="fa fw fa-code"></span> Devpost</a>
+                                                </span>
 
-                                </div>
+                                            </p>
+                                            <div class="tags">
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>Python</a>
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>NetworkX</a>
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>RandomGeometricGraphs</a>
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>SensorNetworks</a>
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>Algorithms</a>
+                                            </div>
+                                            <p>
+                                                A small scale project made within 24 hours at HackDFW that earned us an opportunity to enter an accelerator program for start-ups. <br>
+                                                The whole mirror was made from merely a few things: Used cereal boxes, a wood frame, an acrylic sheet with reflective coating, an LED monitor and a Raspberry Pie! <br>
+                                                The interface was designed in HTML5 and was based on meteor.js with multiple APIs used to serve the data like live stocks, emails, tweets and weather and was controlled by voice. <br>
+                                                JavaScript library 'annyang!' was used for voice recognition.
+                                            </p>
 
-                                <div class="info_block">
-                                    <p class="h5 subhead">
-                                        Smart Mirror at HackDFW
-                                        <br>
-                                        <span class="info_duration_date">April 2016 | Team Size: 5<br>
-                                            <a class="code_sources" href="https://devpost.com/software/smart-mirror-9v0pc7#updates" target="_blank">Published on <span class="fa fw fa-code"></span> Devpost</a>
-                                        </span>
+                                        </div>
 
-                                    </p>
-                                    <div class="tags">
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>HackDFW16</a>
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>MeteorJs</a>
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>VoiceOperated</a>
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>HTML/CSS</a>
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>RaspberryPi</a>
-                                    </div>
-                                    <p>
-                                        A small scale project made within 24 hours at HackDFW that earned us an opportunity to enter an accelerator program for start-ups. <br>
-                                        The whole mirror was made from merely a few things: Used cereal boxes, a wood frame, an acrylic sheet with reflective coating, an LED monitor and a Raspberry Pie! <br>
-                                        The interface was designed in HTML5 and was based on meteor.js with multiple APIs used to serve the data like live stocks, emails, tweets and weather and was controlled by voice. <br>
-                                        JavaScript library 'annyang!' was used for voice recognition.
-                                    </p>
+                                        <div class="info_block">
+                                            <p class="h5 subhead">
+                                                Smart Mirror at HackDFW
+                                                <br>
+                                                <span class="info_duration_date">April 2016 | Team Size: 5<br>
+                                                    <a class="code_sources" href="https://devpost.com/software/smart-mirror-9v0pc7#updates" target="_blank">Published on <span class="fa fw fa-code"></span> Devpost</a>
+                                                </span>
 
-                                </div>
+                                            </p>
+                                            <div class="tags">
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>HackDFW16</a>
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>MeteorJs</a>
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>VoiceOperated</a>
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>HTML/CSS</a>
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>RaspberryPi</a>
+                                            </div>
+                                            <p>
+                                                A small scale project made within 24 hours at HackDFW that earned us an opportunity to enter an accelerator program for start-ups. <br>
+                                                The whole mirror was made from merely a few things: Used cereal boxes, a wood frame, an acrylic sheet with reflective coating, an LED monitor and a Raspberry Pie! <br>
+                                                The interface was designed in HTML5 and was based on meteor.js with multiple APIs used to serve the data like live stocks, emails, tweets and weather and was controlled by voice. <br>
+                                                JavaScript library 'annyang!' was used for voice recognition.
+                                            </p>
 
-                                <div class="info_block">
-                                    <p class="h5 subhead">
-                                        Simulating an Operating System
-                                        <br>
-                                        <span class="info_duration_date">April 2016 | Team Size: Solo<br>
-                                            <a class="code_sources " href="https://github.com/shrikarch/Simulated_OS" target="_blank">Source on <span class="fa fw fa-github"></span> Github</a>
-                                        </span>
-                                    </p>
-                                    <div class="tags">
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>JavaScript</a>
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>MemoryManagement</a>
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>ProcessScheduling</a>
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>inquirer</a>
-                                        <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>NodeJs</a>
-                                    </div>
-                                    <p>
-                                        As a part of a class based on Operating System, this project was created to simulate and show memory allocation, memory management and process scheduling in Operating Systems. While the preferred choice of language for majority students in the class was Java or C++, I decided to do it in JavaScript based on NodeJs.
-                                    </p>
+                                        </div>
 
-                                </div>
+                                        <div class="info_block">
+                                            <p class="h5 subhead">
+                                                Simulating an Operating System
+                                                <br>
+                                                <span class="info_duration_date">April 2016 | Team Size: Solo<br>
+                                                    <a class="code_sources " href="https://github.com/shrikarch/Simulated_OS" target="_blank">Source on <span class="fa fw fa-github"></span> Github</a>
+                                                </span>
+                                            </p>
+                                            <div class="tags">
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>JavaScript</a>
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>MemoryManagement</a>
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>ProcessScheduling</a>
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>inquirer</a>
+                                                <a class="tag1" href="#"><span class="fa fw fa-hashtag"></span>NodeJs</a>
+                                            </div>
+                                            <p>
+                                                As a part of a class based on Operating System, this project was created to simulate and show memory allocation, memory management and process scheduling in Operating Systems. While the preferred choice of language for majority students in the class was Java or C++, I decided to do it in JavaScript based on NodeJs.
+                                            </p>
 
-                                <div class="info_block">
-                                    <p class="h5 subhead">
-                                        Data and Visualization, clustering, association mining and classification of a graduation rate data set
-                                        <br>
-                                        <span class="info_duration_date">April 2016 | Team Size: Solo</span>
-                                    </p>
-                                    <div class="tags">
-                                        <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>R</a>
-                                        <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>DataMining</a>
-                                    </div>
-                                    <p>
-                                        As a part of a class based on Operating System, this project was created to simulate and show memory allocation, memory management and process scheduling in Operating Systems. While the preferred choice of language for majority students in the class was Java or C++, I decided to do it in JavaScript based on NodeJs.
-                                    </p>
+                                        </div>
 
-                                </div>
+                                        <div class="info_block">
+                                            <p class="h5 subhead">
+                                                Data and Visualization, clustering, association mining and classification of a graduation rate data set
+                                                <br>
+                                                <span class="info_duration_date">April 2016 | Team Size: Solo</span>
+                                            </p>
+                                            <div class="tags">
+                                                <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>R</a>
+                                                <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>DataMining</a>
+                                            </div>
+                                            <p>
+                                                As a part of a class based on Operating System, this project was created to simulate and show memory allocation, memory management and process scheduling in Operating Systems. While the preferred choice of language for majority students in the class was Java or C++, I decided to do it in JavaScript based on NodeJs.
+                                            </p>
 
-                                <div class="info_block">
-                                    <p class="h5 subhead">
-                                        Information System using Dart and MongoDB
-                                        <br>
-                                        <span class="info_duration_date">April 2016 | Team Size: 2</span>
-                                    </p>
-                                    <div class="tags">
-                                        <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>Dart</a>
-                                        <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>AngularJs</a>
-                                        <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>HTML/CSS</a>
-                                        <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>MongoDB</a>
-                                        <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>PlatformIndependent</a>
-                                    </div>
-                                    <ul class="list-unstyled">
-                                        <li>A RESTful Mobile information management system based on Dart (a programming language introduced by Google) </li>
-                                        <li>Used AngularJs for front-end data manipulation and data-binding. </li>
-                                        <li>Supported by MongoDB as a back end, for it's scalability.</li>
-                                        <br>
-                                        <li>The customer's end was available on handheld devices</li>
-                                        <li>The kitchen end was available for monitors.</li>
-                                        <li>Order's placed by customers would update real-time on the kitchen end.</li>
-                                        <li>Table numbers were passed over by GET requests. Other information was passed by POST request.</li>
+                                        </div>
 
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card card_gutter hidden">
-                        <div class="card-block">
-                            <div class="card-title">
-                                <h4 class="card-title"><span class="fa fw fa-object-group" style="padding-right:10px;"></span>Portfolio</h4>
-                            </div>
-                            <div class="card-text" style="padding-left:40px;">
-                                <div class="info_block">
-                                    <p class="h5 subhead">
-                                        Circleframe Productions
-                                        <br>
-                                        <span class="info_duration_date">Owner: Vishal Kadam</span>
-                                    </p>
-                                    <div class="tags">
-                                        <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>Dart</a>
-                                        <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>AngularJs</a>
-                                        <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>HTML/CSS</a>
-                                        <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>MongoDB</a>
-                                        <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>PlatformIndependent</a>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-7">
+                                        <div class="info_block">
+                                            <p class="h5 subhead">
+                                                Information System using Dart and MongoDB
+                                                <br>
+                                                <span class="info_duration_date">April 2016 | Team Size: 2</span>
+                                            </p>
+                                            <div class="tags">
+                                                <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>Dart</a>
+                                                <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>AngularJs</a>
+                                                <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>HTML/CSS</a>
+                                                <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>MongoDB</a>
+                                                <a class="tag1" href=""><span class="fa fw fa-hashtag"></span>PlatformIndependent</a>
+                                            </div>
                                             <ul class="list-unstyled">
-                                                <li>Built as a portfolio for an aspiring professional photographer.</li>
-
+                                                <li>A RESTful Mobile information management system based on Dart (a programming language introduced by Google) </li>
+                                                <li>Used AngularJs for front-end data manipulation and data-binding. </li>
+                                                <li>Supported by MongoDB as a back end, for it's scalability.</li>
+                                                <br>
+                                                <li>The customer's end was available on handheld devices</li>
+                                                <li>The kitchen end was available for monitors.</li>
+                                                <li>Order's placed by customers would update real-time on the kitchen end.</li>
+                                                <li>Table numbers were passed over by GET requests. Other information was passed by POST request.</li>
 
                                             </ul>
+
                                         </div>
-                                        <div class="col-md-5">
-                                            <img src="img/logoweb.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card_gutter all_resume">
+                                <div class="card-block" id="">
+                                    <h4 class="card-title"><span class="fa fw fa-briefcase" style="padding-right:10px;"></span> Experience</h4>
+                                    <div class="card-text" style="padding-left:40px;">
+
+                                        <div class="info_block">
+                                            <p class="h5 subhead">
+                                                IT Help Desk Representative <small class="text-muted">Southern Methodist University</small><br>
+                                                <span class="info_duration_date">Sept 2015 - Currently Employed</span>
+                                            </p>
+                                            <p>
+                                                • Provide front line help desk support to entire campus community - faculty, staff, students, retirees, parents and prospective students <br>
+                                                • Assist with network configurations, software troubleshooting, email support and configuration for all kinds of devices <br>
+                                                • Provide exceptional service and resolve issues in a timely manner <br>
+                                                • Use remote tools and shared knowledge base to help provide resolutions to reported issues <br>
+                                                • Document all requests for assistance in the Help Desk Software using tickets <br>
+                                            </p>
+
+                                        </div>
+
+                                        <div class="info_block">
+                                            <p class="h5 subhead">
+                                                Full Stack Developer <small class="text-muted">Enliven Art Studio</small><br>
+                                                <span class="info_duration_date">Aug 2014 - Apr 2015</span>
+                                            </p>
+                                            <p>
+                                                • Designed and developed a number of websites on a contract basis. <br>
+                                                • Keeping the current device requirements in the mind, these websites were built to be responsive with extensive use of frameworks like Bootstrap and Foundation. <br>
+                                                • Relied heavily on Less(css) for styling due to its compatibility with Bootstrap. <br>
+                                                • The development was up to the mark with current web development standards. <br>
+                                                • Played an important role in client communication, including understanding the requirements and design decisions. <br>
+                                            </p>
+                                        </div>
+
+                                        <div class="info_block">
+                                            <p class="h5 subhead">
+                                                Front End and JavaScript Developer <small class="text-muted">Palmate Solutions</small><br>
+                                                <span class="info_duration_date">Apr 2014 - Aug 2014</span>
+                                            </p>
+                                            <p>
+                                                • Worked on developing a PHP-based eCommerce portal. <br>
+                                                • Extensively used technologies like Laravel and Grunt to set-up a streamlined flow of development and automation. <br>
+                                                • Used Sass(css) for styling. <br>
+                                                • Used Git for version control and collaboration. <br>
+                                                • Used jQuery and its plugins on large scale for the interactive User Interface. <br>
+                                                • Created a responsive WordPress theme and website. <br>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card_gutter all_projects hidden">
+                                <div class="card-block">
+                                    <div class="row" style="margin-bottom:15px;">
+                                        <div class="col-md-4">
+                                            <figure class="imghvr-fade image-grid-item">
+                                                <img src="https://unsplash.it/500/?image=1050" alt="" class="img-fluid">
+                                                <figcaption>
+                                                    <p class="folio-image-inner-text">
+                                                        Circleframe <br> Productions
+
+                                                    </p>
+                                                    <p><small>Owner:</small> <br>Vishal Kadam</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <figure class="imghvr-fade image-grid-item">
+                                                <img src="https://unsplash.it/500/?image=1050" alt="">
+                                                <figcaption style="background-color:rgba(0,0,0,0.2);">
+                                                    <p>President  lreoem ipsum</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <figure class="imghvr-fade image-grid-item">
+                                                <img src="https://unsplash.it/500/?image=1050" alt="" class="img-fluid image-grid-item">
+                                                <figcaption style="background-color:rgba(0,0,0,0.2);">
+                                                    <p>President  lreoem ipsum</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom:15px;">
+                                        <div class="col-md-4">
+                                            <img src="https://unsplash.it/500/?image=1000" alt="" class="img-fluid image-grid-item">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="https://unsplash.it/500/?image=1050" alt="" class="img-fluid image-grid-item">
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <img src="https://unsplash.it/500/?image=600" alt="" class="img-fluid image-grid-item">
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="card card-gutter">
-                        <div class="card-block">
-                            <div class="card-text">
-                                <div class="website_source">
-                                    Source of this website: <a href="https://github.com/shrikarch/personal_website" class=""><span class="fa fw fa-github"></span> Github</a>
+                            <div class="card card-gutter">
+                                <div class="card-block">
+                                    <div class="card-text">
+                                        <div class="website_source">
+                                            Source of this website: <a href="https://github.com/shrikarch/personal_website" class=""><span class="fa fw fa-github"></span> Github</a>
+                                        </div>
+
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>

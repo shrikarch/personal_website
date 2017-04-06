@@ -47,6 +47,21 @@ body {
 }
 
 .right_section{
+    .buttons{
+        margin-bottom: 15px;
+        .top_link{
+            padding: 15px;
+            color: lighten(#333,20%);
+        }
+        a, a:hover, a:active, a:visited, a:focus {
+            text-decoration:none;
+        }
+        .active_top_link{
+            color: #333;
+            font-weight: 600;
+            border-bottom: 1px solid #333;
+        }
+    }
     .card-title{
         margin-bottom: 20px;
     }
@@ -129,4 +144,18 @@ body {
     overflow: hidden; 
     padding: 0;
     margin: 10px 0px;
+}
+.image-grid-item{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: @primary_color;
+    cursor: pointer;
+    figcaption{
+        background-color: @primary_color;
+
+    }
+    .folio-image-inner-text{
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
 }
