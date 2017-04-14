@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     var screenSpecs = function(){
         return $('html').attr('class').split(" ")
-    }
+    } 
     console.log(screenSpecs()[1]);
 
     addIf(screenSpecs()[1]);
@@ -29,7 +29,7 @@ $(document).ready(function(){
     $('.show_more_block .btn').click(function(){
         $('.excess_on_sm').slideDown("slow");
         $('.show_more_block').fadeOut();
-        
+
     });
 
 
@@ -57,8 +57,8 @@ $(document).ready(function(){
     });
     console.log($('.right_section .excess_on_sm .info_block').length);
 
-    //$('.all_resume').slideUp();
-    //$('.all_projects').slideDown();
+    $('.all_resume').slideUp();
+    $('.all_projects').hide();
 
 
 

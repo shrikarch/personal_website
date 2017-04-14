@@ -11,8 +11,9 @@
     "devDependencies": {
         "grunt": "^1.0.1",
         "grunt-contrib-concat": "*",
-        "grunt-contrib-cssmin": "*",
         "grunt-contrib-less": "*",
-        "grunt-contrib-watch": "*"
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-watch": "*",
+        "livereload-js": "^2.2.2"
     }
 }
