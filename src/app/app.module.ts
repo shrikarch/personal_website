@@ -17,14 +17,12 @@ import { ProjectsComponent } from './main-section/resume/projects/projects.compo
 import { ExperienceComponent } from './main-section/resume/experience/experience.component';
 import { CircleframeComponent } from './main-section/portfolio/circleframe/circleframe.component';
 import { SharpenerincComponent } from './main-section/portfolio/sharpenerinc/sharpenerinc.component';
+import { SectionSwitcherComponent } from './section-switcher/section-switcher.component';
 
 const appRoutes: Routes = [
   { path: '', component: ResumeComponent},
   { path: 'resume', component: ResumeComponent},
-  { path: 'portfolio', component: PortfolioComponent, children: [
-    { path: 'circleframe', component: CircleframeComponent },
-    { path: 'sharpenerinc', component: SharpenerincComponent }
-  ]}
+
 ]
 
 @NgModule({
@@ -40,6 +38,7 @@ const appRoutes: Routes = [
     ExperienceComponent,
     CircleframeComponent,
     SharpenerincComponent,
+    SectionSwitcherComponent,
   ],
   imports: [
     BrowserModule,
