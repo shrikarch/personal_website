@@ -22,7 +22,10 @@ import { SectionSwitcherComponent } from './section-switcher/section-switcher.co
 const appRoutes: Routes = [
   { path: '', component: ResumeComponent},
   { path: 'resume', component: ResumeComponent},
-  { path: 'portfolio', component: PortfolioComponent}
+  { path: 'portfolio', component: PortfolioComponent, children: [
+    { path: 'circleframe', component: CircleframeComponent },
+    { path: 'sharpenerinc', component: SharpenerincComponent }
+  ]}
 ]
 
 @NgModule({
