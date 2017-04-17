@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="buttons pull-right">
+      <a [routerLinkActive]="['active_top_link']" [routerLink]="['/portfolio']" class="top_link" id="showProjects">Portfolio</a>
+      <a [routerLinkActive]="['active_top_link']" [routerLinkActiveOptions]="{exact : true}" routerLink="/" class="top_link" id="showResume">Resume</a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+
+    <router-outlet></router-outlet>
+
+    <div class="card card-gutter">
+      <div class="card-block">
+        <div class="card-text">
+          <div class="website_source">
+            Source of this website: <a href="https://github.com/shrikarch/personal_website" class=""><span class="fa fa-fw fa-github"></span>Github</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
