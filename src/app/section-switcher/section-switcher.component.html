@@ -1,6 +1,9 @@
-<div class="row">
-  <div class="col-md-12">
-    <div class="buttons pull-right">
+<div class="row hidden-sm-down">
+  <div class="col-md-8 recipe-text">
+    <p class="small" [ngStyle]="{'font-weight':600}">Recipe: <fa name="heart" [ngStyle]="{'color':'crimson'}"></fa> + ANGULAR2 </p>
+  </div>
+  <div class="col-md-4">
+    <div class="buttons text-md-right text-sm-center">
       <a [routerLinkActive]="['active_top_link']" [routerLink]="['/portfolio']" class="top_link" id="showProjects">Portfolio</a>
       <a [routerLinkActive]="['active_top_link']" [routerLinkActiveOptions]="{exact : true}" routerLink="/" class="top_link" id="showResume">Resume</a>
     </div>

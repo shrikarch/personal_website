@@ -16,6 +16,7 @@ function addIf(screenspec){
 };
 
 $(document).ready(function(){
+  animateBars();
     alert("ale");
 
     var screenSpecs = function(){
