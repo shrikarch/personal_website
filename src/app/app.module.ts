@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 import { Angular2FontAwesomeModule } from 'angular2-font-awesome/angular2-font-awesome';
+//import { MasonryModule } from 'angular2-masonry';
+//import { LightboxModule } from 'angular2-lightbox/src';
 
 
 import { AppComponent } from './app.component';
