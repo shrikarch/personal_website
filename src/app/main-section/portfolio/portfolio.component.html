@@ -2,8 +2,17 @@
   <div class="card-block">
     <a [routerLink]="['/portfolio','circleframe']">CircleframeComponent</a>
     <br><a [routerLink]="['/portfolio','sharpenerinc']">Sharpenerinc</a>
+    <br><a [routerLink]="['/portfolio','breakthrough-realty']" hidden>breakthrough-realty</a>
   </div>
-  <router-outlet></router-outlet>
+
+  <section class="each_project">
+    <div class="card">
+      <div class="card-block">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </section>
+
 
 
   <div class="hidden">

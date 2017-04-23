@@ -4,23 +4,37 @@
   }
   .mockups{
     margin-top: 30px;
-  }
-  .screens{
-    margin-top: 40px;
-  }
-  .mockups, .screens{
-    .img-caption{
-      text-align: center;
+    .card-columns {
+      .card{display: inline-block};
+      column-count: 3;
     }
   }
-  .img-caption{
-    margin-top: 5px;
-  }
-
   .screens{
     .img-caption{
       margin-bottom: 15px;
     }
+    margin-top: 40px;
   }
+  .mockups, .screens{
+    .subHead{font-weight: 800; font-size: 15px;}
+    .img-caption{
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+
+  .screens{
+    .card-columns {
+      padding: 3px;
+      column-count: 2;
+      .card{
+        //box-shadow: none;
+        box-shadow: 0 0px 6px rgba(0, 0, 0, 0.16)
+        //border: 1px solid #ccc;
+      }
+    }
+
+  }
+
 
 }

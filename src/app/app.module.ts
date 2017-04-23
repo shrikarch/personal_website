@@ -20,13 +20,17 @@ import { ExperienceComponent } from './main-section/resume/experience/experience
 import { CircleframeComponent } from './main-section/portfolio/circleframe/circleframe.component';
 import { SharpenerincComponent } from './main-section/portfolio/sharpenerinc/sharpenerinc.component';
 import { SectionSwitcherComponent } from './section-switcher/section-switcher.component';
+import { BreakthroughRealtyComponent } from './main-section/portfolio/breakthrough-realty/breakthrough-realty.component';
+import { MockImagesComponent } from './main-section/portfolio/mock-images.component';
+import { SidebarToDoComponent } from './sidebar/sidebar-to-do.component';
 
 const appRoutes: Routes = [
   { path: '', component: ResumeComponent},
   { path: 'resume', component: ResumeComponent},
   { path: 'portfolio', component: PortfolioComponent, children: [
     { path: 'circleframe', component: CircleframeComponent },
-    { path: 'sharpenerinc', component: SharpenerincComponent }
+    { path: 'sharpenerinc', component: SharpenerincComponent },
+    { path: 'breakthrough-realty', component: BreakthroughRealtyComponent }
   ]}
 ]
 
@@ -44,6 +48,9 @@ const appRoutes: Routes = [
     CircleframeComponent,
     SharpenerincComponent,
     SectionSwitcherComponent,
+    BreakthroughRealtyComponent,
+    MockImagesComponent,
+    SidebarToDoComponent,
   ],
   imports: [
     BrowserModule,
