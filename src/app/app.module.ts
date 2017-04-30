@@ -29,6 +29,7 @@ const appRoutes: Routes = [
   { path: '', component: ResumeComponent},
   { path: 'resume', component: ResumeComponent},
   { path: 'portfolio', component: PortfolioComponent, children: [
+    // { path: '', component: CircleframeComponent },
     { path: 'circleframe', component: CircleframeComponent },
     { path: 'sharpenerinc', component: SharpenerincComponent },
     { path: 'breakthrough-realty', component: BreakthroughRealtyComponent }

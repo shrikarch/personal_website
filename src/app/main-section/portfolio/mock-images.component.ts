@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   selector: 'app-mock-images',
   template: `
   <div class="mockups" [hidden]=getMockCount()>
-    <p class="subHead">Mockups:</p>
+    <p class="subHead">Mockups and/or Concepts:</p>
     <div class="row">
       <div class="col-md-4" *ngFor="let image of mockImages">
         <div class="card">

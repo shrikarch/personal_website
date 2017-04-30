@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
     <p>Planned To-Do for this website</p>
     <ul class="">
       <li>Add lazyload on images</li>
-      <li>Style portfolio links</li>
+      <li>Fade In animations</li>
       <li>Route animations and fade in effects</li>
     </ul>
 

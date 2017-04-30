@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit() {
   }
+  links = [
+    {linkname: "Circleframe Productions", urlStub: "circleframe"},
+    {linkname: "Sharpenerinc", urlStub: "sharpenerinc"},
+    {linkname: "Breakthrough Realty", urlStub: "breakthrough-realty"}
+    // {linkname: "Enliven Art Studio", urlStub: ""},
+    // {linkname: "Enliven Art Studio", urlStub: ""}
+  ]
+
+  showCard = false;
+
+  showPortfolioCard(){
+    this.showCard = true;
+  }
+
+
 
 }

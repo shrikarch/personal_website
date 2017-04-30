@@ -1,69 +1,44 @@
 <section class="all_projects">
-  <div class="card-block">
-    <a [routerLink]="['/portfolio','circleframe']">CircleframeComponent</a>
-    <br><a [routerLink]="['/portfolio','sharpenerinc']">Sharpenerinc</a>
-    <br><a [routerLink]="['/portfolio','breakthrough-realty']">breakthrough-realty</a>
+
+  <div class="row justify-content-between portfolio_navigation">
+    <span *ngFor="let link of links"><a [routerLink]="['/portfolio',link.urlStub]"
+        routerLinkActive="portfolio_navigation_active">
+          <span >{{link.linkname}}</span>
+          </a></span>
+  </div>
+
+  <div class="row justify-content-around" hidden>
+    <div class="col-md-4">
+      <a [routerLink]="['/portfolio','circleframe']">
+      <div class="anim-cont">
+        <img src="./assets/images/circleframe/cfpSplash.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <div class="anim-cont">
+        <img src="./assets/images/circleframe/cfpSplash.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="anim-cont">
+        <img src="./assets/images/circleframe/cfpSplash.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <section class="each_project">
-    <div class="card">
-      <div class="card-block">
         <router-outlet></router-outlet>
-      </div>
-    </div>
   </section>
 
 
-
-  <div class="hidden">
-    <div class="card-block">
-      <div class="row" style="margin-bottom:15px;">
-        <div class="col-md-4">
-          <figure class="imghvr-fade image-grid-item">
-            <img src="https://unsplash.it/500/?image=1050" alt="" class="img-fluid">
-            <figcaption>
-              <p class="folio-image-inner-text">
-                Circleframe <br> Productions
-
-              </p>
-              <p><small>Owner:</small> <br>Vishal Kadam</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-md-4">
-          <figure class="imghvr-fade image-grid-item">
-            <img src="https://unsplash.it/500/?image=1050" alt="">
-            <figcaption style="background-color:rgba(0,0,0,0.2);">
-              <p class="folio-image-inner-text">
-                ProductClicker
-              </p>
-              <p><small>Owner:</small> <br>Vishal Kadam</p>
-            </figcaption>
-          </figure>
-        </div>
-
-        <div class="col-md-4">
-          <figure class="imghvr-fade image-grid-item">
-            <img src="https://unsplash.it/500/?image=1050" alt="" class="img-fluid image-grid-item">
-            <figcaption style="background-color:rgba(0,0,0,0.2);">
-              <p>President  lreoem ipsum</p>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-      <div class="row" style="margin-bottom:15px;">
-        <div class="col-md-4">
-          <img src="https://unsplash.it/500/?image=1000" alt="" class="img-fluid image-grid-item">
-        </div>
-        <div class="col-md-4">
-          <img src="https://unsplash.it/500/?image=1050" alt="" class="img-fluid image-grid-item">
-        </div>
-
-        <div class="col-md-4">
-          <img src="https://unsplash.it/500/?image=600" alt="" class="img-fluid image-grid-item">
-        </div>
-      </div>
-
-    </div>
-  </div>
 </section>
