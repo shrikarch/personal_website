@@ -9,14 +9,14 @@ import { Image } from '../images.model';
 export class SharpenerincComponent implements OnInit {
   projectName = "sharpenerinc";
   images: Image[] = [
-    new Image('sharpener_home','png','lorem'),
-    new Image('sharpenerMain','gif','lorem'),
-    new Image('sharpener_product','png','lorem'),
-    new Image('sharpener_work','png','lorem'),
-    new Image('sharpener_about','png','lorem'),
-    new Image('sharpener_awards','png','lorem'),
-    new Image('sharpener_mobile_product','png','lorem'),
-    new Image('sharpener_mobile_work','png','lorem')
+    new Image('assets/images/sharpenerinc/sharpener_home.png','png','lorem'),
+    new Image('assets/images/sharpenerinc/sharpenerMain.gif','gif','lorem'),
+    new Image('assets/images/sharpenerinc/sharpener_product.png','png','lorem'),
+    new Image('assets/images/sharpenerinc/sharpener_work.png','png','lorem'),
+    new Image('assets/images/sharpenerinc/sharpener_about.png','png','lorem'),
+    new Image('assets/images/sharpenerinc/sharpener_awards.png','png','lorem'),
+    new Image('assets/images/sharpenerinc/sharpener_mobile_product.png','png','lorem'),
+    new Image('assets/images/sharpenerinc/sharpener_mobile_work.png','png','lorem')
   ]
 
   mockImages: Image[] =[];

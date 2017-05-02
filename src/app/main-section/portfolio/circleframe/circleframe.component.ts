@@ -7,19 +7,19 @@ import { Image } from '../images.model';
   styleUrls: ['./circleframe.component.less']
 })
 export class CircleframeComponent implements OnInit {
-  projectName = "circleframe";
+
   images: Image[] = [
-    new Image('cfpgallery','png','lorem'),
-    new Image('cfphome','png','lorem'),
-    new Image('cfpmobilehome','png','lorem'),
-    new Image('cfpmobilesplash','png','lorem'),
-    new Image('cfpSplash','png','lorem')
+    new Image('assets/images/circleframe/cfpgallery.png','png','lorem'),
+    new Image('assets/images/circleframe/cfphome.png','png','lorem'),
+    new Image('assets/images/circleframe/cfpmobilehome.png','png','lorem'),
+    new Image('assets/images/circleframe/cfpmobilesplash.png','png','lorem'),
+    new Image('assets/images/circleframe/cfpSplash.png','png','lorem')
   ]
 
   mockImages: Image[] =[
-    new Image('cfpmock1','jpg','lorem'),
-    new Image('cfpmock2','jpg','lorem'),
-    new Image('cfpmock3','jpg','lorem')
+    new Image('assets/images/circleframe/cfpmock1.jpg','jpg','lorem'),
+    new Image('assets/images/circleframe/cfpmock2.jpg','jpg','lorem'),
+    new Image('assets/images/circleframe/cfpmock3.jpg','jpg','lorem')
    ];
   constructor() { }
 

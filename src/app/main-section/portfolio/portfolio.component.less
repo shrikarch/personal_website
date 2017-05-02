@@ -13,17 +13,6 @@
     .img-caption{
       margin-bottom: 15px;
     }
-    margin-top: 40px;
-  }
-  .mockups, .screens{
-    .subHead{font-weight: 800; font-size: 15px;}
-    .img-caption{
-      text-align: center;
-      margin-top: 5px;
-    }
-  }
-
-  .screens{
     .card-columns {
       padding: 3px;
       column-count: 2;
@@ -33,59 +22,98 @@
         //border: 1px solid #ccc;
       }
     }
+    margin-top: 40px;
+  }
+  .mockups, .screens{
+    .subHead{font-weight: 800; font-size: 15px;}
+    .img-caption{
+      text-align: center;
+      margin-top: 5px;
+    }
+    // img {
+    //   transition: opacity 1s;
+    //   opacity: 0;
+    //   transform: translateY(10px);
+    // }
+    // img.ng-lazyloaded {
+    //   opacity: 1;
+    //   transform: translateY(0px);
+    //   //border: 1px solid yellow;
+    // }
+
+    img {
+            // min-width: 1497px;
+            // width: 100%;
+            // min-height: 1127px;
+            text-align: center;
+        }
+        img.ng-lazyloaded {
+            animation: fadein .5s;
+            //thumbnail
+            padding: .25rem;
+            border: 1px solid #ddd;
+            border-right: .25rem;
+            max-width: 100%;
+        }
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
 
   }
-} //each project ends
 
-.portfolio_navigation{
-  line-height: 50px;
-  margin: 30px 0px;
-  a{
-    text-decoration: none;
-    padding: 10px;
-    color: inherit;
-    background-color: #fff;
-    border: 2px solid #eee;
+
+  } //each project ends
+
+  .portfolio_navigation{
+    line-height: 50px;
+    margin: 30px 0px;
+    a{
+      text-decoration: none;
+      padding: 10px;
+      color: inherit;
+      background-color: #fff;
+      border: 2px solid #eee;
+    }
+    .portfolio_navigation_active{
+      font-weight: 600;
+      border: 2px solid #888;
+    }
   }
-  .portfolio_navigation_active{
-    font-weight: 600;
-    border: 2px solid #888;
+
+  //image hover effects
+  .anim-cont {
+    position: relative;
+    // width: 50%;
   }
-}
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #333;
+  }
 
-//image hover effects
-.anim-cont {
-  position: relative;
-  // width: 50%;
-}
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #333;
-}
+  .anim-cont:hover .overlay {
+    opacity: 1;
+  }
 
-.anim-cont:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }

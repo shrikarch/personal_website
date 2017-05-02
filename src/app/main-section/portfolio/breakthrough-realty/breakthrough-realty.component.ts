@@ -23,20 +23,19 @@ import { Image } from '../images.model';
   ]
 })
 export class BreakthroughRealtyComponent implements OnInit {
-  projectName = "breakthrough-realty";
   state = "normal";
 
   images: Image[] = [
-    new Image('breakthrough_full','png','lorem'),
-    new Image('breakthrough_services','png','lorem'),
-    new Image('breakthrough_mobileLanding','png','lorem'),
-    new Image('breakthrough_modileMain','png','lorem')
+    new Image('assets/images/breakthrough-realty/breakthrough_full.png','png','lorem'),
+    new Image('assets/images/breakthrough-realty/breakthrough_services.png','png','lorem'),
+    new Image('assets/images/breakthrough-realty/breakthrough_mobileLanding.png','png','lorem'),
+    new Image('assets/images/breakthrough-realty/breakthrough_modileMain.png','png','lorem')
   ]
 
   mockImages: Image[] =[
-    new Image('mockup_template2','jpg','lorem'),
-    new Image('mockup_template3','jpg','lorem'),
-    new Image('mockup_template1','jpg','lorem'),
+    new Image('assets/images/breakthrough-realty/mockup_template2.jpg','jpg','lorem'),
+    new Image('assets/images/breakthrough-realty/mockup_template3.jpg','jpg','lorem'),
+    new Image('assets/images/breakthrough-realty/mockup_template1.jpg','jpg','lorem'),
    ];
 
   stateChange(){
