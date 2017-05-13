@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Routes, RouterModule } from '@angular/router';
+import {LocationStrategy, HashLocationStrategy} from '@angular/common';
+
 import { Angular2FontAwesomeModule } from 'angular2-font-awesome/angular2-font-awesome';
 import { LazyLoadImageModule  } from 'ng-lazyload-image';
 
@@ -24,6 +26,8 @@ import { BreakthroughRealtyComponent } from './main-section/portfolio/breakthrou
 import { MockImagesComponent } from './main-section/portfolio/mock-images.component';
 import { SidebarToDoComponent } from './sidebar/sidebar-to-do.component';
 import { TestComponentComponent } from './main-section/test-component/test-component.component';
+import { EnlivenArtComponent } from './main-section/portfolio/enliven-art/enliven-art.component';
+import { ChaitanyaComponent } from './main-section/portfolio/chaitanya/chaitanya.component';
 
 const appRoutes: Routes = [
   { path: '', component: ResumeComponent},
@@ -33,7 +37,9 @@ const appRoutes: Routes = [
     // { path: '', component: CircleframeComponent },
     { path: 'circleframe', component: CircleframeComponent },
     { path: 'sharpenerinc', component: SharpenerincComponent },
-    { path: 'breakthrough-realty', component: BreakthroughRealtyComponent }
+    { path: 'breakthrough-realty', component: BreakthroughRealtyComponent },
+    { path: 'enliven-art-studio', component: EnlivenArtComponent },
+    { path: 'chaitanya-b', component: ChaitanyaComponent }
   ]}
 ]
 
@@ -55,6 +61,8 @@ const appRoutes: Routes = [
     MockImagesComponent,
     SidebarToDoComponent,
     TestComponentComponent,
+    EnlivenArtComponent,
+    ChaitanyaComponent,
   ],
   imports: [
     BrowserModule,

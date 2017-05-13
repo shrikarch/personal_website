@@ -71,13 +71,22 @@
     a{
       text-decoration: none;
       padding: 10px;
-      color: inherit;
+      color: lighten(#333, 40%);
       background-color: #fff;
       border: 2px solid #eee;
+      -webkit-transition: border 0.3s;
+      -moz-transition: border 0.3s;
+      -o-transition: border 0.3s;
+      transition: border 0.3s;
+      font-weight: 600;
+      &:hover{
+        border: 2px solid #aaa;
+      }
     }
     .portfolio_navigation_active{
+      color: #333;
       font-weight: 600;
-      border: 2px solid #888;
+      border: 2px solid #666;
     }
   }
 

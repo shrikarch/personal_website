@@ -15,9 +15,9 @@ export class PortfolioComponent implements OnInit {
   links = [
     {linkname: "Circleframe Productions", urlStub: "circleframe"},
     {linkname: "Sharpenerinc", urlStub: "sharpenerinc"},
-    {linkname: "Breakthrough Realty", urlStub: "breakthrough-realty"}
-    // {linkname: "Enliven Art Studio", urlStub: ""},
-    // {linkname: "Enliven Art Studio", urlStub: ""}
+    {linkname: "Breakthrough Realty", urlStub: "breakthrough-realty"},
+    {linkname: "Enliven Art Studio", urlStub: "enliven-art-studio"},
+    {linkname: "Chaitanya Bhaidkar", urlStub: "chaitanya-b"}
   ]
 
   showCard = false;
