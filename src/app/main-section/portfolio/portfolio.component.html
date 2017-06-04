@@ -1,44 +1,45 @@
 <section class="all_projects">
 
-  <div class="row justify-content-between portfolio_navigation">
+  <div hidden class="row justify-content-between portfolio_navigation" [@showState] = "isShown ? 'shown' : 'notShown'" *ngIf = "isShown">
     <span *ngFor="let link of links"><a [routerLink]="['/portfolio',link.urlStub]"
-        routerLinkActive="portfolio_navigation_active">
-          <span >{{link.linkname}}</span>
-          </a></span>
+      routerLinkActive="portfolio_navigation_active" (click) = "isShown = false">
+      <span >{{link.linkname}}</span>
+    </a></span>
   </div>
 
-  <div class="row justify-content-around" hidden>
-    <div class="col-md-4">
-      <a [routerLink]="['/portfolio','circleframe']">
-      <div class="anim-cont">
-        <img src="./assets/images/circleframe/cfpSplash.png" alt="Avatar" class="image">
-        <div class="overlay">
-          <div class="text">Hello World</div>
-        </div>
-      </div>
-      </a>
-    </div>
-    <div class="col-md-4">
-      <div class="anim-cont">
-        <img src="./assets/images/circleframe/cfpSplash.png" alt="Avatar" class="image">
-        <div class="overlay">
-          <div class="text">Hello World</div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="anim-cont">
-        <img src="./assets/images/circleframe/cfpSplash.png" alt="Avatar" class="image">
-        <div class="overlay">
-          <div class="text">Hello World</div>
-        </div>
+  <div class="" [@showState] = "isShown ? 'shown' : 'notShown'" *ngIf = "isShown">
+    <div class="container-fluid">
+      <div class="row">
+        <div *ngFor="let link of links" class="col-md-6 each-portfolio-entry">
+
+          <a [routerLink]="['/portfolio',link.urlStub]"
+          routerLinkActive="portfolio_navigation_active"
+          (click) = "isShown = false">
+            <div class="each-entry-inner text-center"
+            [style.background]="'url(./assets/images/portfolio-bgs/bg_' + link.urlStub + '.jpg)'"
+            [style.background-size]="'cover'"
+            >
+            <p class="each-entry-header">{{link.linkname}}</p>
+            <p class="each-entry-short-desc" style="">
+              {{link.desc}}
+            </p>
+          </div>
+        </a>
+
       </div>
     </div>
   </div>
+</div>
 
-  <section class="each_project">
-        <router-outlet></router-outlet>
-  </section>
+<p class="backButton" *ngIf = "!isShown">
+  <a [routerLink]="['/portfolio']" (click) = "isShown = true">
+  <fa name="arrow-left" fixed="true"></fa>
+</a>
+</p>
+
+<section class="each_project">
+  <router-outlet></router-outlet>
+</section>
 
 
 </section>
