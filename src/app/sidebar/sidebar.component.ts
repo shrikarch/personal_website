@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.less']
 })
 export class SidebarComponent implements OnInit {
+  info = {
+    "email":"",
+    "phone":""
+  }
+  constructor() {
 
-  constructor() { }
+  }
 
   ngOnInit() {
+    this.info = {
+      "email":"shrikar.chonkar@gmail.com",
+      "phone":"469-740-1920"
+    }
   }
 
 }

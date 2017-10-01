@@ -11,7 +11,7 @@ skills = [
   {"name":"JavaScript", "value":85},
   {"name":"Elixir", "value":75},
   {"name":"Angular2", "value":75},
-  {"name":"AngularJs", "value":60},
+  {"name":"AngularJs", "value":80},
   {"name":"NodeJs", "value":55},
   {"name":"PHP", "value":60},
   {"name":"ReactJs", "value":20},
