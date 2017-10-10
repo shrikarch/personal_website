@@ -33,9 +33,9 @@ export class BreakthroughRealtyComponent implements OnInit {
   ]
 
   mockImages: Image[] =[
-    new Image('assets/images/breakthrough-realty/mockup_template2.jpg','jpg','lorem'),
-    new Image('assets/images/breakthrough-realty/mockup_template3.jpg','jpg','lorem'),
-    new Image('assets/images/breakthrough-realty/mockup_template1.jpg','jpg','lorem'),
+    // new Image('assets/images/breakthrough-realty/mockup_template2.jpg','jpg','lorem'),
+    // new Image('assets/images/breakthrough-realty/mockup_template3.jpg','jpg','lorem'),
+    // new Image('assets/images/breakthrough-realty/mockup_template1.jpg','jpg','lorem'),
    ];
 
   stateChange(){

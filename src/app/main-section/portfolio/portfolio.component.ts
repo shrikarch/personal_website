@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { showStateTrigger } from "./animations";
 import { Router } from '@angular/router';
+import { HostListener } from '@angular/core';
+import { PlatformLocation } from '@angular/common'
 
 @Component({
   selector: 'app-portfolio',
@@ -12,16 +14,22 @@ import { Router } from '@angular/router';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor(private _router:Router) {
-      if (this._router.url == '/portfolio'){
-        this.isShown = true;
-      } else{
-        this.isShown = false;
-      }
-   }
+  constructor(private _router:Router, location:PlatformLocation) {
+    if (this._router.url == '/portfolio'){
+      this.isShown = true;
+    } else{
+      this.isShown = false;
+    }
+
+    location.onPopState(() => {
+      console.log('pressed back!');
+      this.isShown = true;
+    });
+  }
 
   ngOnInit() {
   }
+
   links = [
     {
       linkname: "Circleframe Productions",
@@ -47,6 +55,16 @@ export class PortfolioComponent implements OnInit {
       linkname: "Chaitanya Bhaidkar",
       urlStub: "chaitanya-b",
       desc: "Concept design of a landing page for a prodigal guitarist"
+    },
+    {
+      linkname: "Jason's 670G Experience",
+      urlStub: "ft1d",
+      desc: "A website for a Type 1 Diabetes activist."
+    },
+    {
+      linkname: "Powerfully Passionate Philanthropy",
+      urlStub: "ppp",
+      desc: "Website for a new real-estate model that also helps community"
     }
   ]
 

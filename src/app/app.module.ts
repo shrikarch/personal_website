@@ -28,6 +28,8 @@ import { SidebarToDoComponent } from './sidebar/sidebar-to-do.component';
 import { TestComponentComponent } from './main-section/test-component/test-component.component';
 import { EnlivenArtComponent } from './main-section/portfolio/enliven-art/enliven-art.component';
 import { ChaitanyaComponent } from './main-section/portfolio/chaitanya/chaitanya.component';
+import { Ft1dComponent } from './main-section/portfolio/ft1d/ft1d.component';
+import { PppComponent } from './main-section/portfolio/ppp/ppp.component';
 
 const appRoutes: Routes = [
   { path: '', component: ResumeComponent},
@@ -39,7 +41,9 @@ const appRoutes: Routes = [
     { path: 'sharpenerinc', component: SharpenerincComponent },
     { path: 'breakthrough-realty', component: BreakthroughRealtyComponent },
     { path: 'enliven-art-studio', component: EnlivenArtComponent },
-    { path: 'chaitanya-b', component: ChaitanyaComponent }
+    { path: 'chaitanya-b', component: ChaitanyaComponent },
+    { path: 'ft1d', component: Ft1dComponent },
+    { path: 'ppp', component: PppComponent }
   ]}
 ]
 
@@ -63,6 +67,8 @@ const appRoutes: Routes = [
     TestComponentComponent,
     EnlivenArtComponent,
     ChaitanyaComponent,
+    Ft1dComponent,
+    PppComponent,
   ],
   imports: [
     BrowserModule,
